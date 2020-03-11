@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    NOOB <img src="{{asset('images/a1.jpg')}}" alt="" width="150px">
+                    SOULDRIVE <img src="{{asset('images/a1.jpg')}}" alt="" width="150px">
                 </div>
 
                 <div class="links">
