@@ -42,6 +42,7 @@
 
             .content {
                 text-align: center;
+                color: #4b352c;
             }
 
             .title {
@@ -49,9 +50,9 @@
             }
 
             .links > a {
-                color: #636b6f;
+                color:  #d2a679;
                 padding: 0 25px;
-                font-size: 13px;
+                font-size: 16px;
                 font-weight: 600;
                 letter-spacing: .1rem;
                 text-decoration: none;
@@ -63,7 +64,7 @@
             }
         </style>
     </head>
-    <body>
+    <body background="images/HDsouldrive.jpg" style="height: fit-content;">
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
@@ -81,18 +82,11 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    SOULDRIVE <img src="{{asset('images/a1.jpg')}}" alt="" width="150px">
+                    SOULDRIVE <img src="{{asset('images/logo.png')}}" alt="" width="150px">
                 </div>
 
                 <div class="links">
                     <a href="{{ url('/main')}}">Main Page</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
             </div>
         </div>

@@ -51,6 +51,7 @@
                         </ul>
                     </div>
                     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+                    <body onload="move()">
                     <div class="col-md-10">
                             <div class="alert alert-success" role="alert">
                                     <h4 class="alert-heading">Your Comment Has been Submitted!</h4>
