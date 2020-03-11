@@ -52,41 +52,34 @@
                                         <h1 class="display-4">Bicycles Shop SoulDrive</h1>
                                         <p class="lead">Various of the accessories could choose by you!</p>
                                         <hr class="my-4">
+                                        <a class="btn btn-primary btn-lg" href="{{ url('viewlistaccess') }}" role="button">Show all list</a>
                                         <p>New release Accessories!</p>
                                 </div>
                                     <div class="row">
-                                        <div class="col-sm-3">
+                                        <div class="col-sm-4">
                                             <div class="card h-100">
                                                 <div class="card-body">
-                                                    <h5 class="card-title">Cycling Gloves</h5><a href="{{ url('viewlist') }}">
+                                                    <h5 class="card-title">Cycling Gloves</h5><a href="{{ url('viewlistgloves') }}">
                                                     <img src="picturelo/gloves.jpg" alt="" class="img-fluid"></a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-sm-3">
+                                        <div class="col-sm-4">
                                             <div class="card h-100">
                                                 <div class="card-body">
-                                                    <h5 class="card-title">Cycling Shoes</h5><a href="{{ url('viewlist') }}"> 
+                                                    <h5 class="card-title">Cycling Shoes</h5><a href="{{ url('viewlistshoes') }}"> 
                                                     <img src="picturelo/shoes.jpg" alt="" class="img-fluid"></a>
                                                 </div>
                                             </div>
                                         </div>   
-                                        <div class="col-sm-3">
+                                        <div class="col-sm-4">
                                             <div class="card h-100">
                                                 <div class="card-body">
-                                                    <h5 class="card-title">Bicycle Pumps</h5><a href="{{ url('viewlist') }}">
+                                                    <h5 class="card-title">Bicycle Pumps</h5><a href="{{ url('viewlistpumps') }}">
                                                     <img src="picturelo/pumps.jpg" alt="" class="img-fluid"></a>
                                                 </div>
                                             </div>
                                         </div>   
-                                        <div class="col-sm-3">
-                                          <div class="card h-100">
-                                              <div class="card-body">
-                                                  <h5 class="card-title">More...</h5><a href="{{ url('viewlist') }}">
-                                                  <img src="picturelo/more.jpg" alt="" class="img-fluid"></a>
-                                              </div>
-                                          </div>
-                                      </div>   
                                     </div>
                             </div>
                         </div>

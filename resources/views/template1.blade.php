@@ -52,9 +52,9 @@
                                       Products
                                     </button>
                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                      <a class="dropdown-item" href="{{ url('viewlistmountain') }}">Mountain Bike</a>
-                                      <a class="dropdown-item" href="{{ url('viewlistroad') }}">Road Bike</a>
-                                      <a class="dropdown-item" href="{{ url('viewlistfold') }}">Folding Bike</a>
+                                      <a class="dropdown-item" href="{{ url('viewlistgloves') }}">Cycling Gloves</a>
+                                      <a class="dropdown-item" href="{{ url('viewlistshoes') }}">Cycling Shoes</a>
+                                      <a class="dropdown-item" href="{{ url('viewlistpumps') }}">Bicycle Pumps</a>
                                     </div>
                         </div>
                     </div>
@@ -73,7 +73,7 @@
                                 <nav aria-label="Page navigation example">
                                         <ul class="pagination">
                                           <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                                          <li class="page-item"><a class="page-link" href="{{ url('viewlist') }}">1</a></li>
+                                          <li class="page-item"><a class="page-link" href="{{ url('viewlistaccess') }}">1</a></li>
                                           <li class="page-item"><a class="page-link" href="#">Next</a></li>
                                         </ul>
                                 </nav>

@@ -25,6 +25,8 @@ class ProductController extends Controller
         'id'=>$r->id,  //add on
         'name'=>$r->fullname, //full name from html
         'description'=>$r->description,
+        'Type'=>$r->Type,
+        'TypeProduct'=>$r->TypeProduct,
         'price'=>$r->price,
         'quantity'=>$r->quantity,
         'categoryID'=>$r->categoryID,
@@ -49,11 +51,65 @@ class ProductController extends Controller
     }
     public function viewlist(){
 
-        $products=Product::all();
+        $products=Product::all()->where('TypeProduct','Bike');
         
         return view('mainlist')->with('products',$products);
         
     }
+    public function viewlistmountain(){
+
+        $products =Product::all()->where('categoryID','1');
+        
+        return view('mainlist')->with('products',$products);
+        
+    }
+    public function viewlistroad(){
+
+        $products =Product::all()->where('categoryID','2');
+        
+        return view('mainlist')->with('products',$products);
+        
+    }
+    public function viewlistfold(){
+
+        $products =Product::all()->where('categoryID','3');
+        
+        return view('mainlist')->with('products',$products);
+        
+    }
+
+    public function viewlistaccess(){
+
+        $products =Product::all()->where('categoryID','4');
+
+        return view('main1list')->with('products',$products);
+        
+    }
+
+    public function viewlistgloves(){
+
+        $products =Product::all()->where('Type','Gloves');
+
+        return view('main1list')->with('products',$products);
+        
+    }
+
+    public function viewlistshoes(){
+
+        $products =Product::all()->where('Type','Shoes');
+
+        return view('main1list')->with('products',$products);
+        
+    }
+
+    public function viewlistpumps(){
+
+        $products =Product::all()->where('Type','Pumps');
+
+        return view('main1list')->with('products',$products);
+        
+    }
+
     public function detail($id){
        
         $products =Product::all()->where('id',$id);
@@ -116,6 +172,13 @@ class ProductController extends Controller
             $products=Product::all();
             
             return view('bikeaccess')->with('products',$products);
+            
+        }
+        public function submit(){
+
+            $products=Product::all();
+            
+            return view('submit')->with('products',$products);
             
         }
 }

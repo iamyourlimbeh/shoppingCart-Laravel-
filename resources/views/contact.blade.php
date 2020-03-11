@@ -83,7 +83,7 @@
                         </div>
                             <textarea class="form-control" aria-label="Message"></textarea>
                     </div>
-                    <button onclick="location.href = 'submit.html';" id="myButton" class="float-right submit-button" >Submit</button>
+                    <button onclick="location.href = '{{ url('submit') }}';" id="myButton" class="float-right submit-button" >Submit</button>
             </div>
         
             <div class="col-md-6"style="margin-top: 15px; text-align:center">
@@ -100,7 +100,7 @@
             <div class="card-body">
               <h5 class="card-title">Promotions for bicycles sales ! </h5>
               <p class="card-text">Over RM1000 purchase total would have RM100 Discount </p>
-              <a href="bootstrap.html" class="btn btn-primary">Shop Now!</a>
+              <a href="{{ url('main') }}" class="btn btn-primary">Shop Now!</a>
             </div>
             <div class="card-footer text-muted" style="background-color:lightblue;">
               Expired in December!

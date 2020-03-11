@@ -17,6 +17,8 @@
                 <th>&nbsp;</th>
                 <th>Name</th>
                 <th>Description</th>
+                <th>Type</th>   
+                <th>TypeProduct</th>   
                 <th>Price</th>
                 <th>Quantity</th>
                 <th>Category</th>      
@@ -30,9 +32,12 @@
                             <td><img src="{{ asset('images/') }}/{{$product->image}}" width="50"></td>
                             <td>{{$product->name}}</td>
                             <td>{{$product->description}}</td>
+                            <td>{{$product->Type}}</td> 
+                            <td>{{$product->TypeProduct}}</td> 
                             <td>{{$product->price}}</td>
                             <td>{{$product->quantity}}</td>
-                            <td>{{$product->categoryID}}</td>    
+                            <td>{{$product->categoryID}}</td>   
+                              
                             <td><a href="{{ route('viewproduct.delete', ['id' => $product->id]) }}" class="btn btn-danger confirmation"> Delete </a> <a href="{{ route('edit.product', ['id' => $product->id]) }}" class="btn btn-info"> Edit </a></td>           
                         </tr>   
         @endforeach

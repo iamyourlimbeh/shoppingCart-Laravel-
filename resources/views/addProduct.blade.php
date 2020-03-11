@@ -50,6 +50,16 @@ Copy this code in your html file.
                 <span class="Error"></span>
             </div>
             <div class="form-group">
+                <label>Type:</label>
+                <input class="form-control" type="text" name="Type" required placeholder="Enter Product Type"/>
+                <span class="Error"></span>
+            </div>
+            <div class="form-group">
+                <label>Type of Product</label>
+                <input class="form-control" type="text" name="TypeProduct" required placeholder="Enter Product Type lo"/>
+                <span class="Error"></span>
+            </div>
+            <div class="form-group">
                 <label>Product price:</label>
                 <input class="form-control" type="number" name="price" required placeholder="Enter Price"/>
                 <span class="Error"></span>
@@ -62,7 +72,7 @@ Copy this code in your html file.
             </div>
            
             <div class="form-group">
-                <label>Product Quantity:</label>
+                <label>Product ID:</label>
                 <select name="categoryID" id="categoryID" class="form-control">
                     <option value="1">Mountain Bike</option>
                     <option value="2">Road Bike</option>

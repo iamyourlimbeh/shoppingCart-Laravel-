@@ -53,41 +53,34 @@
                                         <p class="lead">A lot of types bicycles and accessories were SOLD in this WEBSITE!</p>
                                         <hr class="my-4">
                                         <p>Every month have the big promotion for each of the products!</p>
+                                        <a class="btn btn-primary btn-lg" href="{{ url('viewlist') }}" role="button">Show all list</a>
                                         <a class="btn btn-primary btn-lg" href="{{ url('bikeaccess') }}" role="button">Learn more about accessories</a>
                                 </div>
                                     <div class="row">
-                                        <div class="col-sm-3">
+                                        <div class="col-sm-4">
                                             <div class="card h-100">
                                                 <div class="card-body">
-                                                    <h5 class="card-title">Mountain Bike</h5><a href="{{ url('viewlist') }}">
+                                                    <h5 class="card-title">Mountain Bike</h5><a href="{{ url('viewlistmountain') }}">
                                                     <img src="picturelo/mountainbike.jpg" alt="" class="img-fluid"></a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-sm-3">
+                                        <div class="col-sm-4">
                                             <div class="card h-100">
                                                 <div class="card-body">
-                                                    <h5 class="card-title">Road Bike</h5><a href="{{ url('viewlist') }}"> 
+                                                    <h5 class="card-title">Road Bike</h5><a href="{{ url('viewlistroad') }}"> 
                                                     <img src="picturelo/roadbikemain.jpg" alt="" class="img-fluid"></a>
                                                 </div>
                                             </div>
                                         </div>   
-                                        <div class="col-sm-3">
+                                        <div class="col-sm-4">
                                             <div class="card h-100">
                                                 <div class="card-body">
-                                                    <h5 class="card-title">Folding Bike</h5><a href="{{ url('viewlist') }}">
+                                                    <h5 class="card-title">Folding Bike</h5><a href="{{ url('viewlistfold') }}">
                                                     <img src="picturelo/foldingbikes.jpg" alt="" class="img-fluid"></a>
                                                 </div>
                                             </div>
-                                        </div>   
-                                        <div class="col-sm-3">
-                                          <div class="card h-100">
-                                              <div class="card-body">
-                                                  <h5 class="card-title">More...</h5><a href="{{ url('viewlist') }}">
-                                                  <img src="picturelo/more.jpg" alt="" class="img-fluid"></a>
-                                              </div>
-                                          </div>
-                                        </div>   
+                                        </div>    
                                     </div>
                             </div>
                         </div>

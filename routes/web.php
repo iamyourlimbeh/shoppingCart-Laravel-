@@ -47,6 +47,21 @@ Route::get('/viewlist',[
     'as'=>'view.list'
 ]);
 
+Route::get('/viewlistmountain',[
+    'uses'=>'ProductController@viewlistmountain',
+    'as'=>'view.list.mountain'
+]);
+
+Route::get('/viewlistroad',[
+    'uses'=>'ProductController@viewlistroad',
+    'as'=>'view.list.road'
+]);
+
+Route::get('/viewlistfold',[
+    'uses'=>'ProductController@viewlistfold',
+    'as'=>'view.list.fold'
+]);
+
 Route::get('/productdetail/{id}', [
     'uses'=>'ProductController@detail',
     'as' => 'product.detail'
@@ -89,3 +104,26 @@ Route::get('/bikeaccess',function() {
     return view('bikeaccess');
 });
 
+Route::get('/submit',function() {
+    return view('submit');
+});
+
+Route::get('/viewlistaccess',[
+    'uses'=>'ProductController@viewlistaccess',
+    'as'=>'viewlistaccess.list'
+]);
+
+Route::get('/viewlistgloves',[
+    'uses'=>'ProductController@viewlistgloves',
+    'as'=>'viewlistgloves.list'
+]);
+
+Route::get('/viewlistshoes',[
+    'uses'=>'ProductController@viewlistshoes',
+    'as'=>'viewlistshoes.list'
+]);
+
+Route::get('/viewlistpumps',[
+    'uses'=>'ProductController@viewlistpumps',
+    'as'=>'viewlistpumps.list'
+]);

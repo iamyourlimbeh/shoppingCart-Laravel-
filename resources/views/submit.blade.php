@@ -41,58 +41,56 @@
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
           </form>
         </div>
-      </nav>        
-   
-      <div class="container-fluid" style="margin-top:10px">
+      </nav>   
+
+            <div class="container-fluid" style="margin-top:10px">
                 <div class="row">
                     <div class="col-md-2">
-                        <h1>Filter&nbsp;by:<span class="badge badge-light"></span></h1>
-                        <div class="dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                      Products
-                                    </button>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                      <a class="dropdown-item" href="{{ url('viewlistmountain') }}">Mountain Bike</a>
-                                      <a class="dropdown-item" href="{{ url('viewlistroad') }}">Road Bike</a>
-                                      <a class="dropdown-item" href="{{ url('viewlistfold') }}">Folding Bike</a>
-                                    </div>
-                        </div>
+                        <ul class="list-group">
+                            <li class="list-group-item active">Submitted...</li>
+                        </ul>
                     </div>
-                    <div class="col-md-1"></div>
-                    <div class="col-md-8">
-                        <div class="card border-0">
-                            <div class="row">
-                
-                @yield('content')
-                </div>
-                
-                </div>
-                   
-
-                <div class="col-sm-6" style="margin-top: 10px">
-                                <nav aria-label="Page navigation example">
-                                        <ul class="pagination">
-                                          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                                          <li class="page-item"><a class="page-link" href="{{ url('viewlist') }}">1</a></li>
-                                          <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                                        </ul>
-                                </nav>
+                    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+                    <div class="col-md-10">
+                            <div class="alert alert-success" role="alert">
+                                    <h4 class="alert-heading">Your Comment Has been Submitted!</h4>
+                                    <p>Thank you for your comment given</p>
+                                    <hr>
+                                    <p class="mb-0">We will do our best and enhance rapidly ! </p>
                             </div>
-                        </div>
                     </div>
+                    <div class="col-md-10">
+                        <div id="myBar" class="w3-yellow w3-center w3-padding-large" style="width:20%">0%</div>
+                    </div>
+                    <script>
+                            function move() {
+                              var elem = document.getElementById("myBar");   
+                              var width = 0;
+                              var id = setInterval(frame, 50);
+                              function frame() {
+                                if (width >= 100) {
+                                  clearInterval(id);
+                                  window.location.replace("{{ url('main') }}");
+                                } else {
+                                  width++; 
+                                  elem.style.width = width + '%'; 
+                                  elem.innerHTML = width * 1  + '%';
+                                }
+                              }
+                            }
+                    </script>
+                
                 </div>
-                <div class="col-sm-1"></div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 bg-warning">
+                <div class="row" style="margin-top: 500px">
+                    <div class="col-md-12 bg-warning">
                             NSIT Academy <br>
                             No.16, Jalan Sri Putra 1, <br>
                             Bandar Putra, <br>
                             81000 Kulai , Johor <br>
                             607-6600628 <br>
+                    </div>
                 </div>
             </div>
-        </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
