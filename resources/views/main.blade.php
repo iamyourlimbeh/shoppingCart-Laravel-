@@ -63,9 +63,9 @@
           <form class="form-inline my-2 my-lg-0" method="post" action="{{ route('search.product') }}">
           {{ csrf_field() }}
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="searchProduct">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="margin:10px">Search</button>
           </form>
-          <img src="{{asset('images/usericon.jpg')}}" class="img-fluid rounded-circle" alt="" height="50px" width="50px">
+          <img src="{{asset('images/usericon.jpg')}}" class="img-fluid rounded-circle" alt="" height="50px" width="50px" style="margin:10px">
           @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
