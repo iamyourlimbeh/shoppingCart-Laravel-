@@ -174,11 +174,4 @@ class ProductController extends Controller
             return view('bikeaccess')->with('products',$products);
             
         }
-        public function submit(){
-
-            $products=Product::all();
-            
-            return view('submit')->with('products',$products);
-            
-        }
 }
