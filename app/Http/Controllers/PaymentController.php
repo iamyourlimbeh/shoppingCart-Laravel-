@@ -142,7 +142,7 @@ class PaymentController extends Controller
         if (empty($request->PayerID) || empty($request->token)) {
 
             Session::put('error', 'Payment failed');
-            return Redirect::to('/');
+            return Redirect::to('/viewlist');
 
         }
 

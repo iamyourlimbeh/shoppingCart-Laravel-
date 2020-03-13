@@ -122,6 +122,8 @@ class ProductController extends Controller
         $keyword=$r->searchProduct;
         $products =DB::table('products')->where('name', 'like', '%' . $keyword . '%')
                                         ->orWhere('description', 'like', '%' . $keyword . '%')
+                                        ->orWhere('Type', 'like', '%' . $keyword . '%')
+                                        ->orWhere('TypeProduct', 'like', '%' . $keyword . '%')
                                         ->get();        
         return view('mainlist')->with('products',$products);
          }
@@ -143,6 +145,8 @@ class ProductController extends Controller
         $products=Product::find($r->id);    //step 4 bind data
         $products->name=$r->fullname;
         $products->description=$r->description;
+        $products->Type=$r->Type;
+        $products->TypeProduct=$r->TypeProduct;
         $products->price=$r->price;
         $products->quantity=$r->quantity;
         $products->categoryID=$r->categoryID;
