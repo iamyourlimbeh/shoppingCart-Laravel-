@@ -101,6 +101,7 @@
                                         <ul class="pagination">
                                           <li class="page-item"><a class="page-link" href="#">Previous</a></li>
                                           <li class="page-item"><a class="page-link" href="{{ url('viewlist') }}">1</a></li>
+                                          <li class="page-item"><a class="page-link" href="{{ url('viewlistaccess') }}">2</a></li>
                                           <li class="page-item"><a class="page-link" href="#">Next</a></li>
                                         </ul>
                                 </nav>
