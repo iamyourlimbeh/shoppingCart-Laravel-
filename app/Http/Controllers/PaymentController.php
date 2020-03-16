@@ -162,7 +162,7 @@ class PaymentController extends Controller
             Notification::route('mail', $email)->notify(new \App\Notifications\orderPaid($email));
             
 
-            return Redirect::to('viewlist');
+            return Redirect::to('successful');
 
         }
 

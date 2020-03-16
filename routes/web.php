@@ -18,6 +18,14 @@ Route::get('/main',function() {
     return view('main');
 });
 
+Route::get('/successful',function() {
+    return view('successful');
+});
+
+Route::get('/delivery',function() {
+    return view('delivery');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
